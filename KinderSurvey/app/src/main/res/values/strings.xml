@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Kinder Care</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">SignIn</string>
+    <string name="action_sign_in_short">SignIn</string>
+    <string name="logout">Logout</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_incorrect_username">This username is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <string name="error_invalid_patientname">This patientname is invalid</string>
+    <string name="error_invalid_number">This number is invalid</string>
+    <string name="error_invalid_email">This email is invalid</string>
+    <string name="error_invalid_phonenumber">This phone number is invalid</string>
+    <string name="feedback_comment">Thanks for Rating Us!</string>
+    <string name="hospital_title">Kinder Women\'s Hospital &amp; Fertility Center</string>
+    <string name="na">Not Relevant</string>
+    <string-array name="patient_types">
+        <item>In Patient</item>
+        <item>Out Patient</item>
+    </string-array>
+</resources>

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="creator.kindersurvey.Survey.SurveyScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#f7f6f6">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:text="Kinder Womens \nHospital &amp; \nFertility Centre"
+            android:textColor="@color/title_blue"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView"
+            android:background="#808080" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/view">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/nabh" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/imageView4"
+                app:srcCompat="@drawable/icmr" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageView3"
+                app:srcCompat="@drawable/singapore1st" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/countryRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/relativeLayout"
+            android:layout_toRightOf="@+id/relativeLayout"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageViewindia"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/imageViewindia"
+                android:gravity="center"
+                android:text="India" />
+
+            <ImageView
+                android:id="@+id/imageViewindia"
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textView5"
+                android:layout_toLeftOf="@+id/imageViewsingapore"
+                android:layout_toStartOf="@+id/imageViewsingapore"
+                android:src="@drawable/india" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageViewsingapore"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/imageViewsingapore"
+                android:gravity="center"
+                android:text="Singapore" />
+
+            <ImageView
+                android:id="@+id/imageViewsingapore"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textView5"
+                android:layout_toLeftOf="@+id/textView6"
+                android:layout_toStartOf="@+id/textView6"
+                android:src="@drawable/singapore" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageViewindonesia"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/imageViewindonesia"
+                android:gravity="center"
+                android:text="Indonesia" />
+
+            <ImageView
+                android:id="@+id/imageViewindonesia"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textView6"
+                android:layout_toLeftOf="@+id/textView3"
+                android:layout_toStartOf="@+id/textView3"
+                android:src="@drawable/indonesia" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageViewsrilanka"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/imageViewsrilanka"
+                android:gravity="center"
+                android:text="Srilanka" />
+
+            <ImageView
+                android:id="@+id/imageViewsrilanka"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView3"
+                android:src="@drawable/srilanka" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@android:color/background_light"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/previousImageButton"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/background_light"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/previous_arrow" />
+
+                <ImageButton
+                    android:id="@+id/nextImageButton"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/background_light"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/next_arrow" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/questionLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/englishquestionTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/title_blue"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/malayalamquestionTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/englishquestionTV"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/title_blue"
+                    android:textSize="24dp" />
+
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/babyGifImageView"
+                    android:layout_width="200dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/baby" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <ImageView
+                        android:id="@+id/cloudImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/seamlessclouds" />
+
+                    <ImageView
+                        android:id="@+id/cloud2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="-70dp"
+                        android:background="@drawable/seamlessclouds" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#f7f6f6"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emojiLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#f7f6f6"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/survey_ll_excellent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f7f6f6"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/excellentGifImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/excellent" />
+
+            <TextView
+                android:id="@+id/excellentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Excellent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/survey_ll_verygood"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f7f6f6"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/veryGoodGifImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/verygood" />
+
+            <TextView
+                android:id="@+id/veryGoodTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Very Good"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/survey_ll_good"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f7f6f6"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/goodGifImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/good" />
+
+            <TextView
+                android:id="@+id/goodTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Good"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/survey_ll_fair"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f7f6f6"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/fairGifImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/fair" />
+
+            <TextView
+                android:id="@+id/fairTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Fair"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/survey_ll_poor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f7f6f6"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/poorGifImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/poor" />
+
+            <TextView
+                android:id="@+id/poorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Poor"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/less15min"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f7f6f6"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/lessthan15" />
+
+            <TextView
+                android:id="@+id/lessThan15TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="0-15"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/between15and30"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f7f6f6"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/between15and30" />
+
+            <TextView
+                android:id="@+id/between15and30TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="15-30"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/between30and1hr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f7f6f6"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/between30and1hr" />
+
+            <TextView
+                android:id="@+id/between30and1hrTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="30-1 hr"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/above1hr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f7f6f6"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/above1hr" />
+
+            <TextView
+                android:id="@+id/above1hrTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="1 hr &amp; Above"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/naLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f7f6f6"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/nrbutton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:src="@drawable/nrbutton" />
+
+            <TextView
+                android:id="@+id/nrTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="Not relevant"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
